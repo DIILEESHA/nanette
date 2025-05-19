@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "am";
+  /* text-transform: uppercase; */
+  src: url("../public/fonts/am.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "m";
+  text-transform: uppercase;
+  src: url("../public/fonts/m.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "g";
+  text-transform: uppercase;
+  src: url("../public/fonts/h.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}

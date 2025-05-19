@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "m";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "am";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/ChosunCentennial.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "g";
+  src: url("https://fonts.cdnfonts.com/css/gotham");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.invitation_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.bal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+}
+
+.ballon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://i.imgur.com/rx3s7bM.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.IMG {
+  width: 590px;
+  object-fit: contain;
+  object-position: center 0%;
+  height: 100%;
+}
+
+.imger {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  opacity: 150%;
+  justify-content: center;
+}
+
+.invitation_content {
+  background-image: linear-gradient(180deg, transparent, #000000);
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  padding: 40px 0;
+  color: #fff;
+  z-index: 1;
+}
+
+.dilla {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.invitation_content {
+  text-align: center;
+}
+
+.invitation_preheader {
+  margin-top: 190px;
+  font-family: "m";
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.invitation_header {
+  font-family: "am";
+  margin: 10px 0 -80px 0;
+  font-weight: 300;
+  font-size: 100px;
+  text-shadow: 1px 10px 20px #d7aa6c;
+}
+
+.invitation_subheader {
+  text-transform: uppercase;
+  font-family: "g";
+  font-size: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #d7aa6c;
+}
+
+.invitation_text {
+  font-family: "m";
+  margin-top: -20px;
+  width: 30%;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+.liner {
+  width: 10%;
+  background-color: white;
+  height: 2px;
+  z-index: 5;
+  position: relative;
+}
+
+.das {
+  margin: 20px 0;
+}
+
+.invitation_details {
+  margin: 20px 0;
+}
+
+.honoree {
+  line-height: 150%;
+  font-family: "am";
+  font-weight: 300;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  text-shadow: 1px 10px 20px #d7aa6c;
+}
+
+.birthday_type {
+  color: #d7aa6c;
+  font-size: 25px;
+  font-family: "g";
+}
+
+.invitation_details {
+  font-size: 20px;
+  font-family: "g";
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 1200px) {
+  .invitation_header, .invitation_subheader {
+    font-size: 80px;
+  }
+  
+  .honoree {
+    font-size: 40px;
+  }
+  
+  .invitation_text {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .invitation_header, .invitation_subheader {
+    font-size: 70px;
+  }
+  
+  .honoree {
+    font-size: 35px;
+  }
+  
+  .invitation_text {
+    width: 50%;
+  }
+  
+  .IMG {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .invitation_preheader {
+    margin-top: 150px;
+    font-size: 18px;
+  }
+  
+  .invitation_header, .invitation_subheader {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .honoree {
+    font-size: 30px;
+  }
+  
+  .invitation_text {
+    width: 60%;
+    font-size: 16px;
+  }
+  
+  .birthday_type {
+    font-size: 20px;
+  }
+  
+  .invitation_details {
+    font-size: 18px;
+  }
+  
+  .IMG {
+    width: 400px;
+  }
+  
+  .liner {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .invitation_preheader {
+    margin-top: 120px;
+    font-size: 16px;
+  }
+  
+  .invitation_header, .invitation_subheader {
+    font-size: 70px;
+  }
+
+  .invitation_header{
+    margin-bottom: -40px;
+  }
+  
+  .honoree {
+    font-size: 32px;
+    margin-bottom: -10px;
+  }
+  
+  .invitation_text {
+    width: 80%;
+    font-size: 14px;
+    margin-top: -10px;
+  }
+  
+  .birthday_type {
+    font-size: 18px;
+  }
+  
+  .invitation_details {
+    font-size: 16px;
+  }
+  
+  .IMG {
+    width: 300px;
+  }
+  
+  .liner {
+    width: 30%;
+  }
+
+  .das{
+    margin: 10px 0;
+  }
+  
+  .invitation_content {
+    padding: 30px 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .invitation_header, .invitation_subheader {
+    font-size: 70px;
+  }
+  
+  .honoree {
+    font-size: 32px;
+  }
+  
+  .invitation_text {
+    width: 90%;
+  }
+  
+  .IMG {
+    width: 400px;
+  }
+}

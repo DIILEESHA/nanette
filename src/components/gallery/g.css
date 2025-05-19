@@ -1,0 +1,411 @@
+.gallery {
+  margin: 0 auto;
+  text-align: center;
+  background-image: linear-gradient(
+    0deg,
+    transparent 0%,
+    transparent 75%,
+    #000 100%
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.malka {
+  padding: 100px 100px 0px 100px;
+}
+
+.content-wrapper {
+  margin-bottom: 80px;
+}
+
+.gallery_title {
+  text-align: center;
+  font-size: 40px;
+  font-family: "g";
+  line-height: 150%;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-shadow: 1px 1px 10px #d7aa6c;
+  font-weight: 300;
+}
+
+.other {
+  font-size: 80px;
+  font-family: "am";
+  text-shadow: 1px 1px 10px #d7aa6c;
+  margin-bottom: 30px;
+}
+
+.gallery_p {
+  font-weight: 300;
+  font-family: "poppins", sans-serif;
+  line-height: 150%;
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 0px 0 20px 0;
+}
+
+.slider {
+  display: flex;
+  gap: 30px;
+  cursor: grab;
+}
+
+.slide {
+  position: relative;
+  min-width: 400px;
+  height: 500px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.slide:hover .slide-image {
+  transform: scale(1.05);
+}
+
+.slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 50%);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.slide:hover .slide-overlay {
+  opacity: 0.4;
+}
+
+.scroll-indicator {
+  font-family: "poppins", sans-serif;
+  font-size: 30px;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  background: rgba(215, 170, 108, 0.9);
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  pointer-events: none;
+  z-index: 100;
+  mix-blend-mode: screen;
+  transform: translate(-50%, -50%);
+}
+
+.prty_img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.party_grid {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.party_card {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #d7aa6c;
+  margin: 20px auto;
+  text-align: left;
+  display: flex;
+  gap: 20px;
+}
+
+.party_sub1 {
+  flex: 1;
+}
+
+.party_sub2 {
+  flex: 2;
+}
+
+.color_ball {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.colord1,
+.colord2,
+.colord3 {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.f {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.colord1 {
+  background-color: #800000;
+}
+
+.colord2 {
+  background-color: #c0c0c0 !important;
+}
+
+.colord3 {
+  background-color: #ffffff;
+}
+
+.prty_title {
+  font-size: 35px;
+  text-transform: capitalize;
+  font-family: "g";
+  font-weight: 300;
+  text-shadow: 1px 1px 10px #d7aa6c;
+  margin-bottom: 0px;
+}
+
+.prty_location,
+.prty_date,
+.prty_time {
+  font-family: "poppins", sans-serif;
+  font-size: 17px;
+  margin: 7px 0;
+}
+
+.sha {
+  line-height: 150%;
+}
+.drt {
+  background-color: #000;
+  /* border: none; */
+  padding: 20px 40px;
+  margin-top: 40px;
+  cursor: pointer;
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-family: "m";
+  position: relative;
+  border: 5px solid #fff;
+}
+.drt::after {
+  position: absolute;
+  border: 5px solid #d7aa6c;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -20px;
+  z-index: -1;
+  right: -20px;
+}
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 1200px) {
+  .malka {
+    padding: 80px 80px 0px 80px;
+  }
+
+  .slide {
+    min-width: 350px;
+    height: 450px;
+  }
+
+  .other {
+    font-size: 70px;
+  }
+
+  .party_card {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .malka {
+    padding: 60px 60px 0px 60px;
+  }
+
+  .gallery_title {
+    font-size: 35px;
+  }
+
+  .other {
+    font-size: 60px;
+  }
+
+  .slide {
+    min-width: 300px;
+    height: 400px;
+  }
+
+  .party_card {
+    max-width: 700px;
+  }
+
+  .prty_title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .malka {
+    padding: 50px 30px 0px 30px;
+  }
+
+  .gallery_title {
+    font-size: 30px;
+  }
+
+  .other {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .gallery_p {
+    font-size: 18px;
+    max-width: 90%;
+  }
+
+  .slide {
+    min-width: 250px;
+    height: 350px;
+  }
+
+  .slider {
+    gap: 20px;
+  }
+
+  .party_card {
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+  .prty_img {
+    height: 30vh;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .prty_title {
+    font-size: 28px;
+  }
+
+  .prty_location,
+  .prty_date,
+  .prty_time {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .malka {
+    padding: 40px 20px 0px 20px;
+  }
+
+  .drt {
+    font-size: 20px;
+  }
+  .gallery_title {
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  .other {
+    font-size: 40px;
+  }
+
+  .gallery_p {
+    font-size: 16px;
+  }
+
+  .slide {
+    min-width: 200px;
+    height: 300px;
+  }
+
+  .slider {
+    gap: 15px;
+  }
+
+  .party_card {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .prty_title {
+    font-size: 24px;
+  }
+
+  .color_ball {
+    justify-content: center;
+  }
+
+  .scroll-indicator {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .malka {
+    padding: 30px 15px 0px 15px;
+  }
+
+  .gallery_title {
+    font-size: 22px;
+  }
+
+  .other {
+    font-size: 32px;
+  }
+
+  .slide {
+    min-width: 180px;
+    height: 250px;
+  }
+
+  .prty_title {
+    font-size: 20px;
+  }
+
+  .prty_location,
+  .prty_date,
+  .prty_time {
+    font-size: 15px;
+  }
+
+  .colord1,
+  .colord2,
+  .colord3 {
+    width: 25px;
+    height: 25px;
+  }
+}
