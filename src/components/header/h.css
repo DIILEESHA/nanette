@@ -1,20 +1,21 @@
 @font-face {
   font-family: "m";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  src: url("../../../public/fonts/m.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "am";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/ChosunCentennial.woff2") format("woff2");
+  src: url("../../../public/fonts/am.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "g";
-  src: url("https://fonts.cdnfonts.com/css/gotham");
+  src: url("../../../public/fonts/g.ttf") format("truetype");
+
   font-weight: normal;
   font-style: normal;
 }
@@ -51,7 +52,7 @@
 }
 
 .IMG {
-  width: 590px;
+  width: 890px;
   object-fit: contain;
   object-position: center 0%;
   height: 100%;
@@ -158,34 +159,36 @@
 
 /* Media Queries for Responsive Design */
 @media only screen and (max-width: 1200px) {
-  .invitation_header, .invitation_subheader {
+  .invitation_header,
+  .invitation_subheader {
     font-size: 80px;
   }
-  
+
   .honoree {
     font-size: 40px;
   }
-  
+
   .invitation_text {
     width: 40%;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  .invitation_header, .invitation_subheader {
+  .invitation_header,
+  .invitation_subheader {
     font-size: 70px;
   }
-  
+
   .honoree {
     font-size: 35px;
   }
-  
+
   .invitation_text {
     width: 50%;
   }
-  
+
   .IMG {
-    width: 500px;
+    width: 800px;
   }
 }
 
@@ -194,33 +197,34 @@
     margin-top: 150px;
     font-size: 18px;
   }
-  
-  .invitation_header, .invitation_subheader {
+
+  .invitation_header,
+  .invitation_subheader {
     font-size: 50px;
     margin-bottom: 10px;
   }
-  
+
   .honoree {
     font-size: 30px;
   }
-  
+
   .invitation_text {
     width: 60%;
     font-size: 16px;
   }
-  
+
   .birthday_type {
     font-size: 20px;
   }
-  
+
   .invitation_details {
     font-size: 18px;
   }
-  
+
   .IMG {
-    width: 400px;
+    width: 700px;
   }
-  
+
   .liner {
     width: 20%;
   }
@@ -231,65 +235,67 @@
     margin-top: 120px;
     font-size: 16px;
   }
-  
-  .invitation_header, .invitation_subheader {
+
+  .invitation_header,
+  .invitation_subheader {
     font-size: 70px;
   }
 
-  .invitation_header{
+  .invitation_header {
     margin-bottom: -40px;
   }
-  
+
   .honoree {
     font-size: 32px;
     margin-bottom: -10px;
   }
-  
+
   .invitation_text {
     width: 80%;
     font-size: 14px;
     margin-top: -10px;
   }
-  
+
   .birthday_type {
     font-size: 18px;
   }
-  
+
   .invitation_details {
     font-size: 16px;
   }
-  
+
   .IMG {
-    width: 300px;
+    width: 600px;
   }
-  
+
   .liner {
     width: 30%;
   }
 
-  .das{
+  .das {
     margin: 10px 0;
   }
-  
+
   .invitation_content {
     padding: 30px 0;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .invitation_header, .invitation_subheader {
+  .invitation_header,
+  .invitation_subheader {
     font-size: 70px;
   }
-  
+
   .honoree {
     font-size: 32px;
   }
-  
+
   .invitation_text {
     width: 90%;
   }
-  
+
   .IMG {
-    width: 400px;
+    width: 600px;
   }
 }

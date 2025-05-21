@@ -3,6 +3,7 @@ import BackgroundVideo from "./components/BackgroundVideo"; // or correct path
 import "./App.css";
 import Header from "./components/header/Header";
 import Gallery from "./components/gallery/Gallery";
+import TeamMembers from "./components/gallery/TeamMembers";
 
 const App = () => {
   return (
@@ -14,11 +15,10 @@ const App = () => {
       <div className="content">
         <Header />
         <Gallery />
+        <TeamMembers />
       </div>
 
-      <footer>
-        {/* her */}
-      </footer>
+      <footer>{/* her */}</footer>
     </div>
   );
 };

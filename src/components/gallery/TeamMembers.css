@@ -1,0 +1,240 @@
+.team-container {
+  padding: 80px 20px;
+  /* background-color: #000; */
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 48px;
+  font-family: "g";
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 10px #d7aa6c;
+  font-weight: 300;
+}
+
+.team-subtitle {
+  font-size: 20px;
+  font-family: "poppins", sans-serif;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.team-slider-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 40px 0;
+}
+
+.team-slider {
+  display: flex;
+  gap: 30px;
+  padding: 20px 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.team-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.team-slider::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.team-slider::-webkit-scrollbar-thumb {
+  background: #d7aa6c;
+  border-radius: 10px;
+}
+
+.team-slide {
+  min-width: 300px;
+  height: 400px;
+  scroll-snap-align: start;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.team-slide-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.team-member-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-slide:hover .team-member-image {
+  transform: scale(1.1);
+}
+
+.team-member-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  padding: 30px 20px;
+  text-align: center;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.team-member-name {
+  font-size: 24px;
+  font-family: "g";
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.team-member-role {
+  font-size: 16px;
+  font-family: "poppins", sans-serif;
+  margin-bottom: 15px;
+  color: #d7aa6c;
+}
+
+.team-view-btn {
+  background: rgba(215, 170, 108, 0.8);
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.team-view-btn:hover {
+  background: #d7aa6c;
+  transform: translateY(-2px);
+}
+
+.team-modal{
+    padding: 20px;
+}
+
+/* Modal Styles */
+.team-modal .ant-modal-content {
+  background: #000;
+  color: #fff;
+  border: 1px solid #d7aa6c;
+  border-radius: 10px;
+}
+
+.team-modal .ant-modal-header {
+  background: #000;
+  border-bottom: 1px solid #d7aa6c;
+}
+
+.team-modal .ant-modal-title {
+  color: #fff;
+  font-family: "g";
+  font-size: 28px;
+  text-align: center;
+}
+
+.team-modal .ant-modal-close {
+  color: #fff;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.modal-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center 10%;
+  border-radius: 5px;
+}
+
+.modal-role {
+  font-family: "g";
+  font-size: 22px;
+  color: #d7aa6c;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.modal-bio {
+  font-family: "poppins", sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .team-title {
+    font-size: 36px;
+  }
+  
+  .team-subtitle {
+    font-size: 18px;
+  }
+  
+  .team-slide {
+    min-width: 250px;
+    height: 350px;
+  }
+  
+  .modal-content {
+    flex-direction: column;
+    /* padding: 20px; */
+  }
+  
+
+.modal-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center 10%;
+  border-radius: 5px;
+}
+}
+
+@media (max-width: 480px) {
+  .team-title {
+    font-size: 28px;
+  }
+  
+  .team-slide {
+    min-width: 200px;
+    height: 300px;
+  }
+  
+  .team-member-name {
+    font-size: 20px;
+  }
+  
+  .modal-bio {
+    font-size: 14px;
+  }
+}

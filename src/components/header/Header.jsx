@@ -54,7 +54,7 @@ const Invitation = () => {
       </div>
       <div className="imger">
         <motion.img
-          src="https://i.imgur.com/czxMGpC.png"
+          src="https://i.imgur.com/nXK6lqi.png"
           className="IMG"
           alt="Birthday Banner"
           initial={{ opacity: 0 }}

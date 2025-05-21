@@ -470,22 +470,7 @@ const Gallery = () => {
         </motion.div>
       </motion.div>
 
-      <motion.div
-        className="bottomer"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 1 }}
-      >
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-        >
-          <button className="drt">rsvp</button>
-        </motion.div>
-      </motion.div>
+     
     </motion.div>
   );
 };
